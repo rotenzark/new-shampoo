@@ -420,6 +420,27 @@ a { color: inherit; }
   max-width: 18ch;
 }
 
+.hero-foto {
+  max-width: 1060px;
+  margin: 3.2rem auto 0;
+}
+
+.hero-foto img {
+  width: 100%;
+  aspect-ratio: 21 / 10;
+  object-fit: cover;
+  border: 1px solid var(--linea);
+  border-radius: 3px;
+}
+
+.hero-foto figcaption {
+  margin-top: .6rem;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--grigio);
+}
+
 /* ---------- filo divisore ---------- */
 
 .filo {

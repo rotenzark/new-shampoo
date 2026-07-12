@@ -21,6 +21,8 @@
       hero_claim: 'Capelli perfetti, dagli anni Ottanta.',
       hero_lead: 'Mauro veniva dai camerini di artisti e cantanti, Enrico dalle sfilate. Da allora fanno una cosa sola, e la fanno bene: teste a posto, in via Lambro 9.',
       hero_badge: '484 recensioni verificate su Treatwell',
+      hero_foto_alt: 'La vetrina di New Shampoo in via Lambro 9: facciata chiara, insegna Aveda e la scritta New Shampoo sul vetro',
+      hero_foto_cap: 'Via Lambro 9 — la vetrina del salone',
       story_num: "01 · Dagli anni '80",
       story_title: 'Prima il backstage,\npoi il salone.',
       story_p1: "Mauro Condorelli ed Enrico Soffritti cominciano nella Milano degli anni Ottanta, e non in un salone qualsiasi: Mauro cura l'immagine di artisti e cantanti, Enrico lavora tra sfilate e moda. È lì che imparano la regola che vale ancora oggi: il taglio giusto è quello che funziona anche quando il fotografo se n'è andato.",
@@ -97,6 +99,8 @@
       hero_claim: 'Perfect hair, since the Eighties.',
       hero_lead: 'Mauro came from the dressing rooms of artists and singers, Enrico from the catwalks. Ever since, they have done one thing and done it well: great heads of hair, at Via Lambro 9.',
       hero_badge: '484 verified reviews on Treatwell',
+      hero_foto_alt: 'The New Shampoo shopfront at Via Lambro 9: a light facade, the Aveda sign and the New Shampoo lettering on the glass',
+      hero_foto_cap: 'Via Lambro 9 — the salon shopfront',
       story_num: '01 · Since the ’80s',
       story_title: 'First the backstage,\nthen the salon.',
       story_p1: "Mauro Condorelli and Enrico Soffritti started out in 1980s Milan, and not in just any salon: Mauro shaped the image of artists and singers, Enrico worked in fashion shows. That's where they learned the rule that still holds today: the right cut is the one that works after the photographer has gone home.",
@@ -188,6 +192,10 @@
       var key = el.getAttribute('data-i18n-aria');
       if (dict[key] !== undefined) el.setAttribute('aria-label', dict[key]);
     });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-alt');
+      if (dict[key] !== undefined) el.setAttribute('alt', dict[key]);
+    });
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       var active = btn.getAttribute('data-lang') === lang;
       btn.classList.toggle('is-active', active);
@@ -275,7 +283,7 @@
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!prefersReduced && 'IntersectionObserver' in window) {
     var targets = document.querySelectorAll(
-      '.hero-nome, .hero-claim, .hero-lead, .hero-cta, .hero-badge, ' +
+      '.hero-nome, .hero-claim, .hero-lead, .hero-cta, .hero-badge, .hero-foto, ' +
       '.sezione-num, .sezione-titolo, .storia-testo, .tappa, .citazione, ' +
       '.salone-illustrazione, .salone-testo, .persona, .squadra-nota, ' +
       '.listino-cat, .listino-nota, .listino-cta, .orari-tabella, .dove'
