@@ -26,7 +26,7 @@
       story_num: "01 · Dagli anni '80",
       story_title: 'Prima il backstage,\npoi il salone.',
       story_p1: "Mauro Condorelli ed Enrico Soffritti cominciano nella Milano degli anni Ottanta, e non in un salone qualsiasi: Mauro cura l'immagine di artisti e cantanti, Enrico lavora tra sfilate e moda. È lì che imparano la regola che vale ancora oggi: il taglio giusto è quello che funziona anche quando il fotografo se n'è andato.",
-      story_p2: 'Negli anni Novanta aprono New Shampoo, in via Lambro 9. Tagli moderni e facili da mantenere anche a casa, colori sicuri e naturali, otto persone in squadra e la formazione continua come abitudine — non come slogan. Ci sono clienti che si affidano a loro da più di trent’anni.',
+      story_p2: 'Negli anni Novanta aprono New Shampoo, in via Lambro 9. Tagli moderni e facili da mantenere anche a casa, colori sicuri e naturali, otto persone in squadra e la formazione continua come abitudine — non come slogan. Ci sono clienti che si affidano a loro da più di trent\'anni.',
       t1_q: "Anni '80",
       t1_c: "Camerini, palchi e passerelle: l'immagine di artisti e sfilate",
       t2_q: "Anni '90",
